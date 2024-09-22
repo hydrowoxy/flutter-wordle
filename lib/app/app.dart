@@ -10,8 +10,8 @@ class App extends StatelessWidget {  // StatelessWidget has immutable state
     return MaterialApp( // Root widget of the app which this build method returns
       title: 'Flutter Wordle App', // App title
       debugShowCheckedModeBanner: false, // Removes debug banner when app is running in debug mode
-      theme: ThemeData.dark().copyWith(scaffoldBackgroundColor: Colors.black), // Dark theme app; base layout widgets are all black
-      home: const WordleScreen(), // Main/Home screen of app
+      theme: ThemeData.dark().copyWith(scaffoldBackgroundColor: Colors.black), // Dark theme app; acaffold bg colour is black
+      home: const WordleScreen(), // Home screen of app
     );
 
   }
