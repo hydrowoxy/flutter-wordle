@@ -1,18 +1,16 @@
-import 'package:flutter/material.dart'; // material.dart pkg for UI elements
+import 'package:flutter/material.dart'; // For pre-built UI components
 
-class App extends StatelessWidget {  // StatelessWidget has immutable state
-  const App({Key? key}) : super(key: key); // Immutable instance of App class
+class App extends StatelessWidget {  // App class extends StatelessWidget, meaning it has no mutable state
+  const App({Key? key}) : super(key: key); // Constructor for the App class; creates an immutable instance
 
   @override
-  Widget build(BuildContext context){ // Returns widget that describes part of the UI; 
-                                      // BuildContext provides info about the location of the widget in the widget tree/UI structure
-
-    return MaterialApp( // Root widget of the app which this build method returns
-      title: 'Flutter Wordle App', // App title
-      debugShowCheckedModeBanner: false, // Removes debug banner when app is running in debug mode
-      theme: ThemeData.dark().copyWith(scaffoldBackgroundColor: Colors.black), // Dark theme app; acaffold bg colour is black
-      home: const WordleScreen(), // Home screen of app
+  Widget build(BuildContext context){ // build method constructs the widget tree for this widget
+                                      // BuildContext provides details about the widget's location in the UI hierarchy
+    return MaterialApp( // The root widget of the application, which wraps other widgets and configures app-wide settings
+      title: 'Flutter Wordle App', // Title
+      debugShowCheckedModeBanner: false, // No debug banner in debug mode
+      theme: ThemeData.dark().copyWith(scaffoldBackgroundColor: Colors.black), // Sets a dark theme for the app and customizes the scaffold background color to black
+      home: const WordleScreen(), // The starting/home screen of the app, a constant widget representing the main UI
     );
-
   }
 }
