@@ -7,15 +7,15 @@ enum LetterStatus { initial, notInWord, inWord, correct }
 
 class Letter extends Equatable {
   
-  // Constructor to create a Letter instance with a given value and status.
-  // If no status is provided, it defaults to LetterStatus.initial.
+  // Constructor to create a Letter instance with a given value and status
+  // If no status is provided, it defaults to LetterStatus.initial
   const Letter({
     required this.val,  // The actual character in this letter (e.g., 'A')
     this.status = LetterStatus.initial,  // The status of the letter in the game
   });
 
-  // Factory constructor to create an "empty" letter (with no value and initial status).
-  // Useful for initializing the board at the start of the game.
+  // Factory constructor to create an "empty" letter (with no value and initial status)
+  // Useful for initializing the board at the start of the game
   factory Letter.empty() => const Letter(val: '');
 
   final String val;  // The value of the letter (a character)
