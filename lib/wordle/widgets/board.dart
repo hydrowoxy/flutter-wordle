@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_wordle/wordle/models/word_model.dart';
+import 'package:flutter_wordle/wordle/widgets/board_tile.dart';
 
 class Board extends StatelessWidget {
   const Board({ 
