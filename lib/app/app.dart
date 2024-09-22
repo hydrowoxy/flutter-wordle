@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart'; // For pre-built UI components
+import 'package:flutter_wordle/wordle/views/wordle_screen.dart';
 
 class App extends StatelessWidget {  // App class extends StatelessWidget, meaning it has no mutable state
   const App({Key? key}) : super(key: key); // Constructor for the App class; creates an immutable instance
